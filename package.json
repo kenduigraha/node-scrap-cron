@@ -1,0 +1,24 @@
+{
+  "name": "scrap-cron",
+  "version": "1.0.0",
+  "description": "scrap and cron job",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenduigraha/node-scrap-cron.git"
+  },
+  "keywords": [
+    "scrapping",
+    "cron",
+    "nodejs"
+  ],
+  "author": "Ken Duigraha Putra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenduigraha/node-scrap-cron/issues"
+  },
+  "homepage": "https://github.com/kenduigraha/node-scrap-cron#readme"
+}
