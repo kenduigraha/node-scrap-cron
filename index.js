@@ -11,6 +11,9 @@ app.use(bodyParser.json())
 app.use(cors())
 
 app.use(express.static(path.join(__dirname, 'public')))
+.set('views', path.join(__dirname, 'views'))
+.set('view engine', 'ejs')
+.get('/', (req, res) => res.render('pages/index'))
 
 app.use('/healthcheck', function (req, res) {
     res.status(200).json({
