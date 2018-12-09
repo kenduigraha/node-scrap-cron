@@ -4,7 +4,8 @@
   "description": "scrap and cron job",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "start": "node index.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/kenduigraha/node-scrap-cron/issues"
   },
-  "homepage": "https://github.com/kenduigraha/node-scrap-cron#readme"
+  "homepage": "https://github.com/kenduigraha/node-scrap-cron#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4"
+  }
 }
