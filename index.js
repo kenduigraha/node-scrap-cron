@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 const cors = require('cors')
+const path = require('path')
 
 const app = express()
 require('dotenv').config()
@@ -8,6 +9,8 @@ require('dotenv').config()
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(cors())
+
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/healthcheck', function (req, res) {
     res.status(200).json({
